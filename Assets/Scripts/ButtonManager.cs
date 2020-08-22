@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ButtonManager : MonoBehaviour
 {
     public GameObject menuSet;
+    public GameObject otherMenu;
     private bool m_clk=false;
     // Start is called before the first frame update
     void Start()
@@ -53,5 +54,13 @@ public class ButtonManager : MonoBehaviour
     public void QuitButton()
     {
         Application.Quit();
+    }
+    public void otherMenuButton()
+    {
+        otherMenu.SetActive(true);
+
+    }public void BackButton()
+    {
+        otherMenu.SetActive(false);
     }
 }
